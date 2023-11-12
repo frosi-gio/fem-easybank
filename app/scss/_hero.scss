@@ -3,7 +3,7 @@
 
   .container {
 
-    @include breakpoint-up(large){    
+    @include breakpoint-up(large) {
       display: flex;
       align-items: center;
     }
@@ -17,12 +17,12 @@
     background-position: center center;
     min-height: 17.5rem;
 
-    @include breakpoint-up(medium){
+    @include breakpoint-up(medium) {
       min-height: 25rem;
       background-position: center 70%;
     }
 
-    @include breakpoint-up(large){
+    @include breakpoint-up(large) {
       flex: 3;
       order: 2;
       height: 41rem;
@@ -31,17 +31,18 @@
       //background-position: left center;
     }
 
-    &::before, &::after {
+    &::before,
+    &::after {
       //border: 1px solid magenta;
     }
 
-    &::before { 
+    &::before {
 
-      @include breakpoint-up(large){
+      @include breakpoint-up(large) {
         content: "";
         position: absolute;
         height: 100%;
-        background-image: url('/images/bg-intro-desktop.svg');        
+        background-image: url('/images/bg-intro-desktop.svg');
         background-repeat: no-repeat;
         background-position: center bottom;
         width: 150%;
@@ -60,11 +61,11 @@
       background-repeat: no-repeat;
       background-position: center bottom;
 
-      @include breakpoint-up(medium){
+      @include breakpoint-up(medium) {
         background-size: 52%;
       }
 
-      @include breakpoint-up(large){
+      @include breakpoint-up(large) {
         width: 120%;
         height: 122%;
         background-size: 94%;
@@ -77,7 +78,7 @@
   &__text {
     text-align: center;
 
-    @include breakpoint-up(large){
+    @include breakpoint-up(large) {
       flex: 2;
       order: 1;
       text-align: left;
